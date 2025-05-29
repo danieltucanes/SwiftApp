@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		FBC3CC3C2DE8B4490014D361 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBC3CC262DE8B4450014D361 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBC3CC2D2DE8B4450014D361;
+			remoteInfo = PixelPlaza;
+		};
+		FBC3CC462DE8B4490014D361 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBC3CC262DE8B4450014D361 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBC3CC2D2DE8B4450014D361;
+			remoteInfo = PixelPlaza;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBC3CC2E2DE8B4450014D361 /* PixelPlaza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelPlaza.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC3CC3B2DE8B4490014D361 /* PixelPlazaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelPlazaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC3CC452DE8B4490014D361 /* PixelPlazaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelPlazaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FBC3CC302DE8B4450014D361 /* PixelPlaza */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PixelPlaza;
+			sourceTree = "<group>";
+		};
+		FBC3CC3E2DE8B4490014D361 /* PixelPlazaTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PixelPlazaTests;
+			sourceTree = "<group>";
+		};
+		FBC3CC482DE8B4490014D361 /* PixelPlazaUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PixelPlazaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBC3CC2B2DE8B4450014D361 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC3CC382DE8B4490014D361 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC3CC422DE8B4490014D361 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBC3CC252DE8B4450014D361 = {
+			isa = PBXGroup;
+			children = (
+				FBC3CC302DE8B4450014D361 /* PixelPlaza */,
+				FBC3CC3E2DE8B4490014D361 /* PixelPlazaTests */,
+				FBC3CC482DE8B4490014D361 /* PixelPlazaUITests */,
+				FBC3CC2F2DE8B4450014D361 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBC3CC2F2DE8B4450014D361 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBC3CC2E2DE8B4450014D361 /* PixelPlaza.app */,
+				FBC3CC3B2DE8B4490014D361 /* PixelPlazaTests.xctest */,
+				FBC3CC452DE8B4490014D361 /* PixelPlazaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBC3CC2D2DE8B4450014D361 /* PixelPlaza */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBC3CC4F2DE8B4490014D361 /* Build configuration list for PBXNativeTarget "PixelPlaza" */;
+			buildPhases = (
+				FBC3CC2A2DE8B4450014D361 /* Sources */,
+				FBC3CC2B2DE8B4450014D361 /* Frameworks */,
+				FBC3CC2C2DE8B4450014D361 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FBC3CC302DE8B4450014D361 /* PixelPlaza */,
+			);
+			name = PixelPlaza;
+			packageProductDependencies = (
+			);
+			productName = PixelPlaza;
+			productReference = FBC3CC2E2DE8B4450014D361 /* PixelPlaza.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBC3CC3A2DE8B4490014D361 /* PixelPlazaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBC3CC522DE8B4490014D361 /* Build configuration list for PBXNativeTarget "PixelPlazaTests" */;
+			buildPhases = (
+				FBC3CC372DE8B4490014D361 /* Sources */,
+				FBC3CC382DE8B4490014D361 /* Frameworks */,
+				FBC3CC392DE8B4490014D361 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBC3CC3D2DE8B4490014D361 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FBC3CC3E2DE8B4490014D361 /* PixelPlazaTests */,
+			);
+			name = PixelPlazaTests;
+			packageProductDependencies = (
+			);
+			productName = PixelPlazaTests;
+			productReference = FBC3CC3B2DE8B4490014D361 /* PixelPlazaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBC3CC442DE8B4490014D361 /* PixelPlazaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBC3CC552DE8B4490014D361 /* Build configuration list for PBXNativeTarget "PixelPlazaUITests" */;
+			buildPhases = (
+				FBC3CC412DE8B4490014D361 /* Sources */,
+				FBC3CC422DE8B4490014D361 /* Frameworks */,
+				FBC3CC432DE8B4490014D361 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBC3CC472DE8B4490014D361 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FBC3CC482DE8B4490014D361 /* PixelPlazaUITests */,
+			);
+			name = PixelPlazaUITests;
+			packageProductDependencies = (
+			);
+			productName = PixelPlazaUITests;
+			productReference = FBC3CC452DE8B4490014D361 /* PixelPlazaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBC3CC262DE8B4450014D361 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					FBC3CC2D2DE8B4450014D361 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					FBC3CC3A2DE8B4490014D361 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = FBC3CC2D2DE8B4450014D361;
+					};
+					FBC3CC442DE8B4490014D361 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = FBC3CC2D2DE8B4450014D361;
+					};
+				};
+			};
+			buildConfigurationList = FBC3CC292DE8B4450014D361 /* Build configuration list for PBXProject "PixelPlaza" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBC3CC252DE8B4450014D361;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FBC3CC2F2DE8B4450014D361 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBC3CC2D2DE8B4450014D361 /* PixelPlaza */,
+				FBC3CC3A2DE8B4490014D361 /* PixelPlazaTests */,
+				FBC3CC442DE8B4490014D361 /* PixelPlazaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBC3CC2C2DE8B4450014D361 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC3CC392DE8B4490014D361 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC3CC432DE8B4490014D361 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBC3CC2A2DE8B4450014D361 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC3CC372DE8B4490014D361 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC3CC412DE8B4490014D361 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBC3CC3D2DE8B4490014D361 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBC3CC2D2DE8B4450014D361 /* PixelPlaza */;
+			targetProxy = FBC3CC3C2DE8B4490014D361 /* PBXContainerItemProxy */;
+		};
+		FBC3CC472DE8B4490014D361 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBC3CC2D2DE8B4450014D361 /* PixelPlaza */;
+			targetProxy = FBC3CC462DE8B4490014D361 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FBC3CC4D2DE8B4490014D361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBC3CC4E2DE8B4490014D361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBC3CC502DE8B4490014D361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = unicauca.PixelPlaza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBC3CC512DE8B4490014D361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = unicauca.PixelPlaza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FBC3CC532DE8B4490014D361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = unicauca.PixelPlazaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PixelPlaza.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PixelPlaza";
+			};
+			name = Debug;
+		};
+		FBC3CC542DE8B4490014D361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = unicauca.PixelPlazaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PixelPlaza.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PixelPlaza";
+			};
+			name = Release;
+		};
+		FBC3CC562DE8B4490014D361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = unicauca.PixelPlazaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PixelPlaza;
+			};
+			name = Debug;
+		};
+		FBC3CC572DE8B4490014D361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = unicauca.PixelPlazaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PixelPlaza;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBC3CC292DE8B4450014D361 /* Build configuration list for PBXProject "PixelPlaza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC3CC4D2DE8B4490014D361 /* Debug */,
+				FBC3CC4E2DE8B4490014D361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBC3CC4F2DE8B4490014D361 /* Build configuration list for PBXNativeTarget "PixelPlaza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC3CC502DE8B4490014D361 /* Debug */,
+				FBC3CC512DE8B4490014D361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBC3CC522DE8B4490014D361 /* Build configuration list for PBXNativeTarget "PixelPlazaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC3CC532DE8B4490014D361 /* Debug */,
+				FBC3CC542DE8B4490014D361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBC3CC552DE8B4490014D361 /* Build configuration list for PBXNativeTarget "PixelPlazaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC3CC562DE8B4490014D361 /* Debug */,
+				FBC3CC572DE8B4490014D361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBC3CC262DE8B4450014D361 /* Project object */;
+}
