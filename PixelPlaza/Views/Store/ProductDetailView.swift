@@ -2,17 +2,46 @@
 //  ProductDetailView.swift
 //  PixelPlaza
 //
-//  Created by Telematica on 29/05/25.
+//  Created by Telematica on 3/06/25.
 //
+
 
 import SwiftUI
 
-struct ProductDetailView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
 
-#Preview {
-    ProductDetailView()
+struct ProductDetailView: View {
+    let product: Product
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading) {
+                Image(product.imageName)
+                    .resizable()
+                    .scaledToFit()
+                    .cornerRadius(12)
+                    .padding()
+
+                Text(product.name)
+                    .font(.largeTitle)
+                    .bold()
+                    .padding(.horizontal)
+
+                Text(product.category)
+                    .font(.title3)
+                    .foregroundColor(.secondary)
+                    .padding(.horizontal)
+
+                Text(String(format: "$%.2f", product.price))
+                    .font(.title2)
+                    .foregroundColor(.accentColor)
+                    .padding(.horizontal)
+
+                Text(product.description)
+                    .font(.body)
+                    .padding()
+            }
+        }
+        .navigationTitle(product.name)
+        .navigationBarTitleDisplayMode(.inline)
+    }
 }
