@@ -1,0 +1,51 @@
+
+[
+    {
+        "id": 1,
+        "name": "Playera negra",
+        "category": "Ropa",
+        "description": "Playera 100% algodón color negro.",
+        "price": 228.0,
+        "imageName": "image-available-1"
+    },
+    {
+        "id": 2,
+        "name": "Playera blanca",
+        "category": "Ropa",
+        "description": "Playera 100% algodón color blanco.",
+        "price": 199.0,
+        "imageName": "image-available-2"
+    },
+    {
+        "id": 3,
+        "name": "Jeans azules",
+        "category": "Pantalones",
+        "description": "Jeans clásicos color azul.",
+        "price": 350.0,
+        "imageName": "image-available-3"
+    },
+    {
+        "id": 4,
+        "name": "Chaqueta ligera",
+        "category": "Ropa",
+        "description": "Chaqueta para clima templado.",
+        "price": 420.0,
+        "imageName": "image-available-4"
+    },
+    {
+        "id": 5,
+        "name": "Zapatos deportivos",
+        "category": "Calzado",
+        "description": "Zapatos cómodos para correr.",
+        "price": 550.0,
+        "imageName": "image-available-5"
+    },
+    {
+        "id": 6,
+        "name": "Gorra casual",
+        "category": "Accesorios",
+        "description": "Gorra con diseño moderno.",
+        "price": 75.0,
+        "imageName": "image-available-6"
+    }
+]

@@ -9,103 +9,111 @@ import SwiftUI
 
 struct LoginView: View {
     @State private var correo: String = ""
-       @State private var password: String = ""
+    @State private var password: String = ""
     @State private var navigateToSignIn = false
-       @Environment(\.colorScheme) var colorScheme
+    @State private var isLoggedIn = false // Estado para controlar navegación a StoreView
 
-       var body: some View {
-           NavigationStack {
-               ZStack {
-                   // Fondo con color de superficie (similar a MaterialTheme.colorScheme.surface)
-                   (colorScheme == .dark ? Color(.systemBackground) : Color(.systemBackground))
-                       .ignoresSafeArea()
+    @Environment(\.colorScheme) var colorScheme
 
-                   VStack(spacing: 16) {
-                       // Logo
-                       Image("logo") // Debes agregar esta imagen en Assets.xcassets
-                           .resizable()
-                           .scaledToFit()
-                           .frame(width: 180, height: 180)
+    var body: some View {
+        NavigationStack {
+            ZStack {
+                // Fondo con color de superficie
+                (colorScheme == .dark ? Color(.systemBackground) : Color(.systemBackground))
+                    .ignoresSafeArea()
 
-                       // Texto de bienvenida
-                       Text("Bienvenido") // Reemplaza con localización si quieres
-                           .font(.system(size: 20, weight: .bold))
-                           .foregroundColor(Color.primary)
+                VStack(spacing: 16) {
+                    // Logo
+                    Image("logo") // Asegúrate de tener esta imagen en Assets.xcassets
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 180, height: 180)
 
-                       Text("Inicia sesión ahora")
-                           .font(.system(size: 16))
-                           .foregroundColor(Color.primary.opacity(0.8))
+                    // Texto de bienvenida
+                    Text("Bienvenido")
+                        .font(.system(size: 20, weight: .bold))
+                        .foregroundColor(Color.primary)
 
-                       // Campos de texto
-                       CustomTextField3(label: "Correo", text: $correo, isSecure: false, keyboardType: .emailAddress)
+                    Text("Inicia sesión ahora")
+                        .font(.system(size: 16))
+                        .foregroundColor(Color.primary.opacity(0.8))
 
-                       CustomTextField3(label: "Contraseña", text: $password, isSecure: true)
+                    // Campos de texto
+                    CustomTextField3(label: "Correo", text: $correo, isSecure: false, keyboardType: .emailAddress)
+                    CustomTextField3(label: "Contraseña", text: $password, isSecure: true)
 
-                       // Botón de inicio de sesión
-                       Button(action: {
-                           // Acción de login, aquí navega a la siguiente pantalla
-                           // Ejemplo: usar NavigationLink o cambiar estado de navegación
-                       }) {
-                           Text("Iniciar sesión")
-                               .fontWeight(.bold)
-                               .frame(maxWidth: .infinity, minHeight: 50)
-                               .background(Color.accentColor)
-                               .foregroundColor(.white)
-                               .cornerRadius(10)
-                       }
-                       .padding(.top, 8)
+                    // Botón de inicio de sesión
+                    Button(action: {
+                        // Aquí podrías validar correo y contraseña
+                        if !correo.isEmpty && !password.isEmpty {
+                            // Simula login exitoso
+                            isLoggedIn = true
+                        }
+                        // Agrega validaciones o alertas si deseas
+                    }) {
+                        Text("Iniciar sesión")
+                            .fontWeight(.bold)
+                            .frame(maxWidth: .infinity, minHeight: 50)
+                            .background(Color.accentColor)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                    }
+                    .padding(.top, 8)
 
-                       // Texto "Olvidé mi contraseña"
-                       Text("Olvidé mi contraseña")
-                           .font(.system(size: 16))
-                           .foregroundColor(Color.primary.opacity(0.8))
-                           .padding(.top, 8)
+                    // Navegación oculta hacia StoreView
+                    NavigationLink(destination: StoreView(), isActive: $isLoggedIn) {
+                        EmptyView()
+                    }
+                    .hidden()
 
-                       // Texto continuar con
-                       Text("O continuar con")
-                           .font(.system(size: 14))
-                           .foregroundColor(Color.primary.opacity(0.7))
-                           .padding(.top, 8)
+                    // Texto "Olvidé mi contraseña"
+                    Text("Olvidé mi contraseña")
+                        .font(.system(size: 16))
+                        .foregroundColor(Color.primary.opacity(0.8))
+                        .padding(.top, 8)
 
-                       // Botones sociales
-                       HStack(spacing: 40) {
-                           Button(action: {
-                               // Login Google
-                           }) {
-                               Image("google_icon")
-                                   .resizable()
-                                   .frame(width: 40, height: 40)
-                           }
+                    // Texto continuar con
+                    Text("O continuar con")
+                        .font(.system(size: 14))
+                        .foregroundColor(Color.primary.opacity(0.7))
+                        .padding(.top, 8)
 
-                           Button(action: {
-                               // Login Facebook
-                           }) {
-                               Image("facebook_icon")
-                                   .resizable()
-                                   .frame(width: 40, height: 40)
-                           }
-                       }
-                       .padding(.top, 8)
+                    // Botones sociales
+                    HStack(spacing: 40) {
+                        Button(action: {
+                            // Login Google
+                        }) {
+                            Image("google_icon")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                        }
 
-                       Spacer()
-                       HStack(spacing: 16) {
-                           
+                        Button(action: {
+                            // Login Facebook
+                        }) {
+                            Image("facebook_icon")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                        }
+                    }
+                    .padding(.top, 8)
 
-                           NavigationLink(destination: RegisterView(), isActive: $navigateToSignIn) {
-                               Button("Registrarme") {
-                                   navigateToSignIn = true
-                               }
-                               .buttonStyle(SecondaryButtonStyle())
-                           }
-                       }
-                       
-                       
-                       
-                   }
-                   .padding(16)
-               }
-           }
-       }
+                    Spacer()
+
+                    // Registro
+                    HStack(spacing: 16) {
+                        NavigationLink(destination: RegisterView(), isActive: $navigateToSignIn) {
+                            Button("Registrarme") {
+                                navigateToSignIn = true
+                            }
+                            .buttonStyle(SecondaryButtonStyle())
+                        }
+                    }
+                }
+                .padding(16)
+            }
+        }
+    }
 }
 
 struct CustomTextField3: View {
