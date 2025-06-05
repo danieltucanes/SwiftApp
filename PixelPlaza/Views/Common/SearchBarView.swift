@@ -8,11 +8,29 @@
 import SwiftUI
 
 struct SearchBarView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    @Binding var searchText: String
 
-#Preview {
-    SearchBarView()
+    var body: some View {
+        HStack {
+            Image(systemName: "magnifyingglass")
+                .foregroundColor(.gray)
+
+            TextField("Buscar productos", text: $searchText)
+                .autocapitalization(.none)
+                .disableAutocorrection(true)
+
+            if !searchText.isEmpty {
+                Button(action: {
+                    searchText = ""
+                }) {
+                    Image(systemName: "xmark.circle.fill")
+                        .foregroundColor(.gray)
+                }
+            }
+        }
+        .padding(10)
+        .background(Color(UIColor.secondarySystemBackground))
+        .cornerRadius(10)
+        .padding(.horizontal)
+    }
 }
