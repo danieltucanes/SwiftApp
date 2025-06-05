@@ -1,10 +1,3 @@
-//
-//  LoginView.swift
-//  PixelPlaza
-//
-//  Created by Telematica on 29/05/25.
-//
-
 import SwiftUI
 
 struct LoginView: View {
@@ -18,18 +11,15 @@ struct LoginView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                // Fondo con color de superficie
                 (colorScheme == .dark ? Color(.systemBackground) : Color(.systemBackground))
                     .ignoresSafeArea()
 
                 VStack(spacing: 16) {
-                    // Logo
-                    Image("logo") // Asegúrate de tener esta imagen en Assets.xcassets
+                    Image("logo")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 180, height: 180)
 
-                    // Texto de bienvenida
                     Text("Bienvenido")
                         .font(.system(size: 20, weight: .bold))
                         .foregroundColor(Color.primary)
@@ -38,18 +28,13 @@ struct LoginView: View {
                         .font(.system(size: 16))
                         .foregroundColor(Color.primary.opacity(0.8))
 
-                    // Campos de texto
                     CustomTextField3(label: "Correo", text: $correo, isSecure: false, keyboardType: .emailAddress)
                     CustomTextField3(label: "Contraseña", text: $password, isSecure: true)
 
-                    // Botón de inicio de sesión
                     Button(action: {
-                        // Aquí podrías validar correo y contraseña
                         if !correo.isEmpty && !password.isEmpty {
-                            // Simula login exitoso
                             isLoggedIn = true
                         }
-                        // Agrega validaciones o alertas si deseas
                     }) {
                         Text("Iniciar sesión")
                             .fontWeight(.bold)
@@ -59,29 +44,25 @@ struct LoginView: View {
                             .cornerRadius(10)
                     }
                     .padding(.top, 8)
-
-                    // Navegación oculta hacia StoreView
+                    
                     NavigationLink(destination: StoreView(), isActive: $isLoggedIn) {
                         EmptyView()
                     }
                     .hidden()
-
-                    // Texto "Olvidé mi contraseña"
+                    
                     Text("Olvidé mi contraseña")
                         .font(.system(size: 16))
                         .foregroundColor(Color.primary.opacity(0.8))
                         .padding(.top, 8)
-
-                    // Texto continuar con
+                        
                     Text("O continuar con")
                         .font(.system(size: 14))
                         .foregroundColor(Color.primary.opacity(0.7))
                         .padding(.top, 8)
-
-                    // Botones sociales
+                        
                     HStack(spacing: 40) {
                         Button(action: {
-                            // Login Google
+                            
                         }) {
                             Image("google_icon")
                                 .resizable()
@@ -89,7 +70,7 @@ struct LoginView: View {
                         }
 
                         Button(action: {
-                            // Login Facebook
+                            
                         }) {
                             Image("facebook_icon")
                                 .resizable()
@@ -99,8 +80,7 @@ struct LoginView: View {
                     .padding(.top, 8)
 
                     Spacer()
-
-                    // Registro
+                    
                     HStack(spacing: 16) {
                         NavigationLink(destination: RegisterView(), isActive: $navigateToSignIn) {
                             Button("Registrarme") {

@@ -2,17 +2,14 @@
 //  StoreView.swift
 //  PixelPlaza
 //
-//  Created by Telematica on 29/05/25.
+//  Created by Telematica on 3/06/25.
 //
-
 import SwiftUI
-
 
 struct StoreView: View {
     @StateObject private var productViewModel = ProductViewModel()
     @StateObject private var storeViewModel: StoreViewModel
 
-    // Init para pasar el productViewModel a storeViewModel
     init() {
         let productVM = ProductViewModel()
         _productViewModel = StateObject(wrappedValue: productVM)
@@ -27,7 +24,6 @@ struct StoreView: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 0) {
-                // Search bar
                 SearchBarView(searchText: $storeViewModel.searchText)
                     .padding(.top, 10)
 

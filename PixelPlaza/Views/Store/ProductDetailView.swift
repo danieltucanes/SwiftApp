@@ -2,10 +2,12 @@
 //  ProductDetailView.swift
 //  PixelPlaza
 //
-//  Created by Telematica on 29/05/25.
+//  Created by Telematica on 3/06/25.
 //
 
+
 import SwiftUI
+
 
 struct ProductDetailView: View {
     let product: Product
@@ -43,4 +45,3 @@ struct ProductDetailView: View {
         .navigationBarTitleDisplayMode(.inline)
     }
 }
-

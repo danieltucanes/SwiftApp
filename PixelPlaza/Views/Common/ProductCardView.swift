@@ -2,8 +2,9 @@
 //  ProductCardView.swift
 //  PixelPlaza
 //
-//  Created by Telematica on 29/05/25.
+//  Created by Telematica on 3/06/25.
 //
+
 
 import SwiftUI
 
@@ -53,4 +54,3 @@ struct ProductCardView: View {
         .frame(height: 260)
     }
 }
-

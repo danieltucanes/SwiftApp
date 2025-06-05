@@ -18,31 +18,28 @@ struct RegisterView: View {
         var body: some View {
             NavigationStack {
                 ZStack {
-                    // Fondo con color de superficie (similar a MaterialTheme.colorScheme.surface)
                     (colorScheme == .dark ? Color(.systemBackground) : Color(.systemBackground))
                         .ignoresSafeArea()
 
                     VStack(spacing: 20) {
                         Spacer()
-
-                        // Ícono usuario
-                        Image("user") // Debe estar en Assets.xcassets
+                        
+                        Image("user")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 110, height: 110)
 
-                        // Descripción
                         Text("Llena el siguiente formulario con tus datos personales. Crea una contraseña y registra una cuenta de correo electrónico")
                             .font(.body)
                             .foregroundColor(Color.primary)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 16)
-                            .lineLimit(nil) // Asegura que el texto puede ocupar varias líneas
+                            .lineLimit(nil)
                             .fixedSize(horizontal: false, vertical: true) // <- CLAVE
 
                         Spacer()
 
-                        // Campos de entrada
+
                         CustomTextField2(label: "Nombre completo", text: $nombre)
                         CustomTextField2(label: "Correo", text: $correo, keyboardType: .emailAddress)
                         CustomTextField2(label: "Contraseña", text: $password, isSecure: true)
